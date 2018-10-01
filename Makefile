@@ -1,3 +1,3 @@
 
 new:
-	./scripts/new-practice.sh
+	./scripts/new-learn.sh
