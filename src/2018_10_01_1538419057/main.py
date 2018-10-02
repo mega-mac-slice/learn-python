@@ -3,7 +3,7 @@ import unittest
 from typing import List
 
 
-def sum_exits(a: List[int], b: List[int]) -> bool:
+def sum_exists(a: List[int], b: List[int]) -> bool:
     seen = set()
 
     for x in a:
@@ -20,19 +20,19 @@ def sum_exits(a: List[int], b: List[int]) -> bool:
 
 class TestSolution(unittest.TestCase):
     def test_simple_success(self):
-        result = sum_exits([1, 2], [3])
+        result = sum_exists([1, 2], [3])
         self.assertTrue(result)
 
     def test_simple_fail(self):
-        result = sum_exits([1, 2], [4])
+        result = sum_exists([1, 2], [4])
         self.assertFalse(result)
 
     def test_simple_negative_success(self):
-        result = sum_exits([-1, 4], [3])
+        result = sum_exists([-1, 4], [3])
         self.assertTrue(result)
 
     def test_simple_negative_fail(self):
-        result = sum_exits([-1, 4], [4])
+        result = sum_exists([-1, 4], [4])
         self.assertFalse(result)
 
 
