@@ -1,4 +1,4 @@
-# 2018_10_01_1538423042 - Min Stack
+# 2018_10_01_1538423042 - MinStack
 Implement a stack, Last In - First Out (**LIFO**), class that tracks the minimum value in the stack.
 
 ```python
