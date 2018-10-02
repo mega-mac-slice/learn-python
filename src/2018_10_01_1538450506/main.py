@@ -16,7 +16,7 @@ def solve(value: int) -> int:
     for value in range(1, 10)[::-1]:
         count = freq[value]
         for _ in range(count):
-            result += value * 10**multiplier
+            result += value * 10 ** multiplier
             multiplier += 1
 
     return result
