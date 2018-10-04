@@ -2,4 +2,4 @@
 Given a list of integers, return the product of all the integers in the list.
 
 ## Examples
-- `[1, 2, 3]` -> 6
+- `[1, 2, 3]` -> `6`

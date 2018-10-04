@@ -5,7 +5,7 @@ from functools import reduce
 
 
 def product(value: List[int]) -> int:
-    return reduce(lambda x, acc: acc * x, value, 1)
+    return reduce(lambda acc, x: acc * x, value, 1)
 
 
 class TestSolution(unittest.TestCase):
