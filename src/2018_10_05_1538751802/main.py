@@ -13,7 +13,6 @@ def solve(arr: [], value: str) -> str:
             rhs = j + 1
 
             token = value[lhs:rhs]
-            print(token)
             if len(arr - set(token)) == 0:
                 valid.append(token)
 
@@ -24,13 +23,17 @@ def solve(arr: [], value: str) -> str:
 
 
 class TestSolution(unittest.TestCase):
-    def test_success(self):
+    def test_adjacent_end_success(self):
         result = solve(['x', 'y', 'z'], 'xyyzyzyx')
         self.assertEqual('zyx', result)
 
-    def test_middle_success(self):
+    def test_adjacent_middle_success(self):
         result = solve(['x', 'y', 'z'], 'xxxxyzxxx')
         self.assertEqual('xyz', result)
+
+    def test_mixed_middle_success(self):
+        result = solve(['i', 'x', 'y', 'z'], 'xxiqyzxxx')
+        self.assertEqual('xiqyz', result)
 
 
 if __name__ == '__main__':
